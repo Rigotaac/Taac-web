@@ -1,3 +1,299 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAAC | Tratamiento de Agua y Construcción</title>
+    <style>
+        /* --- ESTILOS EXISTENTES DE TU WEB (Mantenidos) --- */
+        body {
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fcfcfc;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .servicios-grid, .proyectos-grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .tarjeta {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 6px;
+            width: 280px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .formulario input, .formulario textarea, .formulario button {
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .formulario button {
+            background-color: #0056b3;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+        .btn-general-wa {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            color: #25D366;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* --- NUEVOS ESTILOS PARA TU TIENDA / CATÁLOGO MBR --- */
+        .catalogo-tienda {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px 0;
+        }
+        .ficha-producto {
+            display: flex;
+            flex-wrap: wrap;
+            background: #ffffff;
+            gap: 40px;
+            margin-bottom: 30px;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+        .columna-galeria {
+            flex: 1;
+            min-width: 320px;
+        }
+        .contenedor-principal {
+            width: 100%;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+        .imagen-activa {
+            width: 100%;
+            height: auto;
+            display: block;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+        .miniaturas {
+            display: flex;
+            gap: 10px;
+        }
+        .miniaturas img {
+            width: calc(33.33% - 7px);
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: border-color 0.2s, opacity 0.2s;
+        }
+        .miniaturas img:hover {
+            border-color: #25D366;
+            opacity: 0.8;
+        }
+        .columna-detalles {
+            flex: 1.2;
+            min-width: 320px;
+        }
+        .titulo-producto {
+            font-size: 24px;
+            color: #111;
+            margin-top: 0;
+            line-height: 1.3;
+        }
+        .seccion-precio {
+            background-color: #f4f9f5;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border-left: 4px solid #25D366;
+        }
+        .texto-desde {
+            margin: 0;
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .precio-actual {
+            font-size: 28px;
+            font-weight: bold;
+            color: #222;
+        }
+        .iva-texto {
+            font-size: 13px;
+            color: #677;
+            margin: 5px 0 0 0;
+        }
+        .lista-caracteristicas {
+            padding-left: 20px;
+            color: #444;
+            line-height: 1.6;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .lista-caracteristicas li {
+            margin-bottom: 10px;
+        }
+        .btn-cotizar-wa {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        .btn-cotizar-wa:hover {
+            background-color: #128C7E;
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header-container">
+        <div class="logo"><strong>TAAC</strong> | Tratamiento de Agua y Construcción</div>
+        <nav>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#tienda">Productos</a>
+            <a href="#contacto">Contáctanos</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Soluciones integrales en Agua y Construcción</h1>
+        <p>Combinamos ingeniería de alto nivel con diseño funcional y visión sostenible.</p>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros">
+        <h2>Nosotros</h2>
+        <p>TAAC Somos una empresa especializada, impulsamos soluciones inteligentes en agua, arquitectura y construcción. Nuestra propuesta combina ingeniería de alto nivel con diseño funcional y visión sostenible, para transformar desafíos técnicos en resultados concretos.</p>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="tarjeta">
+                <h3>Agua</h3>
+                <p>Tratamiento, automatización, pólizas de servicio, mantenimientos y diseño de plantas potabilizadoras e industriales.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Arquitectura</h3>
+                <p>Diseño arquitectónico, planos ejecutivos y visualización de proyectos.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>Construcción</h3>
+                <p>Obra civil, supervisión técnica y soluciones estructurales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+        <h2>Nuestros Proyectos</h2>
+        <div class="proyectos-grid">
+            <div class="tarjeta"><h4>Proyecto 1</h4></div>
+            <div class="tarjeta"><h4>Proyecto 2</h4></div>
+            <div class="tarjeta"><h4>Proyecto 3</h4></div>
+            <div class="tarjeta"><h4>Proyecto 4</h4></div>
+        </div>
+    </section>
+
+
+    <!-- ================= SECCIÓN DE TIENDA / PRODUCTOS ACTUALIZADA ================= -->
+    <section id="tienda" class="catalogo-tienda">
+        <h2>Plantas de Tratamiento MBR Disponibles</h2>
+        
+        <!-- PRODUCTO 1: PTAR-MBR 5M3/D -->
+        <div class="ficha-producto">
+            <div class="columna-galeria">
+                <div class="contenedor-principal">
+                    <img src="ptar5-foto1.jpg" alt="PTAR-MBR 5M3/D" class="imagen-activa" id="ptar5-main">
+                </div>
+                <div class="miniaturas">
+                    <img src="ptar5-foto1.jpg" alt="Miniatura 1" onclick="document.getElementById('ptar5-main').src=this.src">
+                    <img src="ptar5-foto2.jpg" alt="Miniatura 2" onclick="document.getElementById('ptar5-main').src=this.src">
+                    <img src="ptar5-foto3.jpg" alt="Miniatura 3" onclick="document.getElementById('ptar5-main').src=this.src">
+                </div>
+            </div>
+            <div class="columna-detalles">
+                <h3 class="titulo-producto">Planta de Tratamiento de Aguas Residuales PTAR-MBR 5M3/D</h3>
+                <div class="seccion-precio">
+                    <p class="texto-desde">Desde</p>
+                    <span class="precio-actual">$350,000.00 MXN</span>
+                    <p class="iva-texto">*Sujeto a ingeniería y requerimientos de instalación</p>
+                </div>
+                <ul class="lista-caracteristicas">
+                    <li><strong>Capacidad:</strong> 5 Metros Cúbicos por Día (5 M³/D).</li>
+                    <li><strong>Tecnología:</strong> Biorreactor de Membrana (MBR) de última generación.</li>
+                    <li><strong>Calidad de Agua:</strong> Filtración avanzada óptima para reúso en riego y servicios sanitarios.</li>
+                </ul>
+                <a href="https://wa.me" target="_blank" class="btn-cotizar-wa">
+                    Cotizar por WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- PRODUCTO 2: PTAR-MBR 1 LPS -->
+        <div class="ficha-producto">
+<<<<<<< HEAD
+=======
+=======
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,7 +301,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TAAC | Tratamiento de Agua y Construcción</title>
 
-<!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLVCKFBN5D"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -263,3 +559,5 @@
   </footer>
 </body>
 </html>
+>>>>>>> 72f094500b6ead5597bf4b06fe67a127c077ea0a
+>>>>>>> parent of 1e60e9d (ACTUALIZACION PAGINA)
