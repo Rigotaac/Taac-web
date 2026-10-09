@@ -1,134 +1,272 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAAC | Tratamiento de Agua, Construcción y Sistemas MBR</title>
-    <!-- Aquí puedes mantener los enlaces a tus archivos CSS si los tenías -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAAC | Tratamiento de Agua y Construcción</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLVCKFBN5D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YLVCKFBN5D');
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="TAAC-preview.png" type="image/png">
+
+  <!-- SEO básico -->
+  <meta name="description" content="TAAC ofrece soluciones integrales en agua, arquitectura y construcción en México. Expertos en tratamiento de agua, diseño arquitectónico, obra civil y plantas de tratamiento (PTAR) con visión sostenible.">
+  <meta name="keywords" content="TAAC, agua, tratamiento de agua, PTAR, plantas de tratamiento, arquitectura, construcción, obra civil, diseño arquitectónico, México">
+  <meta name="author" content="TAAC">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TAAC | Soluciones en Agua y Construcción">
+  <meta property="og:description" content="Soluciones inteligentes en agua, arquitectura y construcción. Ingeniería de alto nivel con enfoque en PTAR y sostenibilidad.">
+  <meta property="og:image" content="https://www.taacmx.com/TAAC-preview.png">
+  <meta property="og:url" content="https://www.taacmx.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TAAC | Soluciones en Agua y Construcción">
+  <meta name="twitter:description" content="Expertos en tratamiento de agua, PTAR, arquitectura y construcción en México.">
+  <meta name="twitter:image" content="https://www.taacmx.com/TAAC-preview.png">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .logo-container img {
+      height: 80px;
+      width: auto;
+    }
+    .logo-container span {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+      padding: 1rem;
+      border-radius: 8px;
+      transform: translateY(60px);
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .services {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .service {
+      flex: 1;
+      text-align: center;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #f5f5f5;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .service img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .service h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.4rem;
+      color: #003366;
+    }
+    .service p {
+      margin: 0 1rem 1.5rem;
+      font-size: 1rem;
+      color: #333;
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+    .contact-form label {
+      font-weight: bold;
+      color: #003366;
+      text-align: left;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #005599;
+    }
+    .whatsapp-button {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .whatsapp-button a {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-button a:hover {
+      background-color: #128C7E;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="logo-container">
+      <img src="logo-taac.png" alt="Logo TAAC">
+      <span>TAAC</span>
+    </div>
+    <nav>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="tienda.html">Tienda</a> <!-- botón agregado -->
+      <a href="#contacto">Contáctanos</a>
+    </nav>
+  </header>
 
-    <!-- Encabezado / Menú de Navegación -->
-    <header>
-        <div class="logo">
-            <img src="logo-taac.png" alt="Logo TAAC">
-            <span>TAAC</span>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="#contacto">Contáctanos</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="hero">
+    <h1>Soluciones integrales en Agua y Construcción</h1>
+  </div>
 
-    <main>
-        <!-- Sección Principal -->
-        <section id="inicio">
-            <h1>Soluciones integrales en Agua y Construcción</h1>
-        </section>
+  <section id="nosotros">
+    <h2>Nosotros</h2>
+    <p>TAAC Somos una empresa especializada, impulsamos soluciones inteligentes en agua, arquitectura y construcción. Nuestra propuesta combina ingeniería de alto nivel con diseño funcional y visión sostenible, para transformar desafíos técnicos en resultados concretos.</p>
+  </section>
 
-        <!-- Sección Nosotros -->
-        <section id="nosotros">
-            <h2>Nosotros</h2>
-            <p><strong>TAAC</strong> Somos una empresa especializada, impulsamos soluciones inteligentes en agua, arquitectura y construcción. Nuestra propuesta combina ingeniería de alto nivel con diseño funcional y visión sostenible, para transformar desafíos técnicos en resultados concretos.</p>
-        </section>
+  <div class="servicio-agua">
+  <h3>Agua Industrial y Sistemas MBR</h3>
+  <p>
+    En <strong>TAAC</strong> somos especialistas en ingeniería ambiental. Ofrecemos diseño, 
+    automatización y mantenimiento de plantas potabilizadoras y de tratamiento de aguas residuales. 
+    Contamos con suministro y venta especializada de <strong>membranas MBR (Biorreactores de Membrana)</strong>, 
+    módulos de ultrafiltración, pólizas de servicio técnico y optimización de sistemas industriales en México.
+  </p>
+  <p>
+    Nuestras soluciones con tecnología de filtración por membranas aseguran una óptima remoción de 
+    contaminantes, facilitando el reúso eficiente del agua bajo cumplimiento normativo estricto.
+  </p>
+  <a href="tienda.html" class="btn-tienda">Ver Catálogo de Membranas MBR</a>
+</div>
+      <div class="service">
+        <img src="arquitectura.jpg" alt="Servicio de Arquitectura">
+        <h3>Arquitectura</h3>
+        <p>Diseño arquitectónico, planos ejecutivos y visualización de proyectos.</p>
+      </div>
+      <div class="service">
+        <img src="construccion.jpg" alt="Servicio de Construcción">
+        <h3>Construcción</h3>
+        <p>Obra civil, supervisión técnica y soluciones estructurales.</p>
+      </div>
+    </div>
+  </section>
 
-        <!-- Sección Nuestros Servicios -->
-        <section id="servicios">
-            <h2>Nuestros Servicios</h2>
-            
-            <!-- Servicio 1: AGUA OPTIMIZADO PARA SEO / MBR -->
-            <div class="servicio-card">
-                <img src="agua.jpg" alt="Servicio de Agua Industrial">
-                <h3>Tratamiento de Agua Industrial y Sistemas MBR</h3>
-                <p>
-                    En <strong>TAAC</strong> somos especialistas en ingeniería ambiental. Ofrecemos diseño, 
-                    automatización y mantenimiento de plantas potabilizadoras y de tratamiento de aguas residuales. 
-                    Contamos con suministro y venta especializada de <strong>membranas MBR (Biorreactores de Membrana)</strong>, 
-                    módulos de ultrafiltración, pólizas de servicio técnico y optimización de sistemas industriales en México.
-                </p>
-                <p>
-                    Nuestras soluciones avanzadas con tecnología de filtración por membranas aseguran una óptima remoción de 
-                    contaminantes, facilitando el reúso eficiente del agua bajo un cumplimiento normativo estricto.
-                </p>
-                <a href="tienda.html" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px;">Ver Tienda de Membranas MBR</a>
-            </div>
+  <section id="proyectos">
+    <h2>Nuestros Proyectos</h2>
+    <div class="projects">
+      <div class="project"><img src="proyecto1.jpg" alt="Proyecto 1" width="100%" /></div>
+      <div class="project"><img src="proyecto2.jpg" alt="Proyecto 2" width="100%" /></div>
+      <div class="project"><img src="proyecto3.jpg" alt="Proyecto 3" width="100%" /></div>
+      <div class="project"><img src="proyecto4.jpg" alt="Proyecto 4" width="100%" /></div>
+    </div>
+  </section>
 
-            <!-- Servicio 2: ARQUITECTURA -->
-            <div class="servicio-card">
-                <img src="arquitectura.jpg" alt="Servicio de Arquitectura">
-                <h3>Arquitectura</h3>
-                <p>Diseño arquitectónico, planos ejecutivos y visualización de proyectos.</p>
-            </div>
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes un proyecto en mente o necesitas asesoría? Escríbenos y con gusto te atenderemos.</p>
+    
+    <form action="https://formspree.io/f/mldqlnwy" method="POST" class="contact-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-            <!-- Servicio 3: CONSTRUCCIÓN -->
-            <div class="servicio-card">
-                <img src="construccion.jpg" alt="Servicio de Construcción">
-                <h3>Construcción</h3>
-                <p>Obra civil, supervisión técnica y soluciones estructurales.</p>
-            </div>
-        </section>
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
 
-        <!-- Sección Especializada para Robustecer el SEO de Membranas -->
-        <section id="tecnologia-mbr" style="background-color: #f8f9fa; padding: 40px 20px; margin: 20px 0; border-radius: 8px;">
-            <h2>🔹 Especialistas en Tecnología y Módulos MBR</h2>
-            <p>
-                Proveemos soluciones tecnológicas de última generación para el tratamiento biológico de aguas residuales. 
-                Nuestras <strong>membranas MBR industriales</strong> permiten una filtración de alta eficiencia microbiológica, 
-                siendo la opción ideal para proyectos de reemplazo de membranas o instalación de plantas compactas nuevas.
-            </p>
-            <ul>
-                <li>Venta de módulos de membranas MBR de fibra hueca y placa plana.</li>
-                <li>Refaccionamiento y mantenimiento químico preventivo de sistemas de filtración.</li>
-                <li>Ingeniería especializada para optimización de plantas de tratamiento de agua.</li>
-            </ul>
-        </section>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-        <!-- Sección Nuestros Proyectos -->
-        <section id="proyectos">
-            <h2>Nuestros Proyectos</h2>
-            <div class="proyectos-grid">
-                <img src="proyecto1.jpg" alt="Proyecto 1 TAAC">
-                <img src="proyecto2.jpg" alt="Proyecto 2 TAAC">
-                <img src="proyecto3.jpg" alt="Proyecto 3 TAAC">
-                <img src="proyecto4.jpg" alt="Proyecto 4 TAAC">
-            </div>
-        </section>
+      <button type="submit">Enviar mensaje</button>
+    </form>
 
-        <!-- Sección Contáctanos -->
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <p>¿Tienes un proyecto en mente o necesitas asesoría? Escríbenos y con gusto te atenderemos.</p>
-            
-            <form action="#" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br><br>
+    <div class="whatsapp-button">
+      <a href="https://wa.me/528184694059?text=Hola%20TAAC,%20quiero%20más%20información%20sobre%20sus%20servicios" target="_blank">
+        💬 Escríbenos por WhatsApp
+      </a>
+    </div>
+  </section>
 
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required><br><br>
-
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
-
-                <button type="submit">Enviar mensaje</button>
-            </form>
-
-            <div style="margin-top: 20px;">
-                <a href="https://wa.me" target="_blank" style="color: #25D366; text-decoration: none; font-weight: bold;">
-                    💬 Escríbenos por WhatsApp
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>TAAC © 2015. Todos los derechos reservados.</p>
-    </footer>
-
+  <footer>
+    TAAC © 2015. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
