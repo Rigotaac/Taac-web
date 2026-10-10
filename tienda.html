@@ -2,187 +2,37 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <!-- TÍTULO SEO: Lo que la gente leerá al buscar en Google (Max 60 carac.) -->
   <title>Plantas de Tratamiento MBR | Venta y Cotización | TAAC</title>
-  
-  <!-- DESCRIPCIÓN SEO: El resumen que aparece debajo de tu enlace en Google -->
   <meta name="description" content="Especialistas en venta y cotización de plantas de tratamiento de aguas residuales PTAR-MBR en México. Modelos de 5m³/d y 30-90m³/d con tecnología avanzada de biorreactor de membrana.">
-  
-  <!-- PALABRAS CLAVE: Orientan a los motores de búsqueda -->
   <meta name="keywords" content="PTAR MBR, plantas de tratamiento MBR, biorreactor de membrana, tratamiento de aguas residuales, TAAC agua, cotizar planta MBR México, ingeniería de agua">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #333;
-      background-color: #fcfcfc;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-      color: white;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    h2 {
-      text-align: center;
-      color: #003366;
-      margin-top: 2rem;
-      font-size: 1.8rem;
-      padding: 0 10px;
-    }
+    body { margin:0; font-family:Arial,sans-serif; color:#333; background:#fcfcfc; }
+    header { background:#003366; color:white; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { margin:0; font-size:1.5rem; }
+    nav a { color:white; margin:0 1rem; text-decoration:none; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    h2 { text-align:center; color:#003366; margin-top:2rem; font-size:1.8rem; }
 
-    /* --- CONTENEDOR ESTILO FICHA DE PRODUCTO --- */
-    .service {
-      background: #ffffff;
-      border-radius: 8px;
-      padding: 2rem;
-      margin: 2rem auto;
-      max-width: 900px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      border: 1px solid #eee;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    /* --- LADO IZQUIERDO: GALERÍA DE IMÁGENES --- */
-    .columna-galeria {
-      flex: 1;
-      min-width: 320px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .contenedor-principal {
-      width: 100%;
-      border: 1px solid #e0e0e0;
-      border-radius: 6px;
-      overflow: hidden;
-      background-color: #f9f9f9;
-    }
-    .imagen-activa {
-      width: 100%;
-      height: auto;
-      display: block;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-    }
-    .gallery {
-      display: flex;
-      gap: 10px;
-      justify-content: flex-start;
-      margin: 0;
-    }
-    .gallery img {
-      width: calc(33.33% - 7px);
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: border-color 0.2s, opacity 0.2s;
-    }
-    .gallery img:hover {
-      border-color: #25D366;
-      opacity: 0.8;
-    }
-
-    /* --- LADO DERECHO: DETALLES Y BOTÓN --- */
-    .columna-detalles {
-      flex: 1.2;
-      min-width: 320px;
-      display: flex;
-      flex-direction: column;
-    }
-    .service h3 {
-      font-size: 24px;
-      color: #111;
-      margin-top: 0;
-      margin-bottom: 15px;
-      line-height: 1.3;
-      text-align: left;
-    }
-    .seccion-precio {
-      background-color: #f4f9f5;
-      padding: 15px;
-      border-radius: 6px;
-      margin-bottom: 20px;
-      border-left: 4px solid #25D366;
-    }
-    .texto-desde {
-      margin: 0;
-      font-size: 12px;
-      color: #666;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: bold;
-    }
-    .precio-actual {
-      font-size: 28px;
-      font-weight: bold;
-      color: #222;
-      display: block;
-      margin: 2px 0;
-    }
-    .iva-texto {
-      font-size: 13px;
-      color: #777;
-      margin: 0;
-      font-style: italic;
-    }
-    ul {
-      text-align: left;
-      margin: 0 0 25px 0;
-      padding-left: 20px;
-      color: #444;
-      line-height: 1.6;
-      font-size: 15px;
-    }
-    ul li {
-      margin-bottom: 8px;
-    }
-    .whatsapp-button {
-      text-align: left;
-      margin-top: auto;
-    }
-    .whatsapp-button a {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 6px;
-      font-size: 16px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
-      transition: background-color 0.2s, transform 0.1s;
-      text-align: center;
-      width: calc(100% - 48px);
-      max-width: 300px;
-    }
-    .whatsapp-button a:hover {
-      background-color: #128C7E;
-      transform: translateY(-1px);
-    }
+    .service { background:#fff; border-radius:8px; padding:2rem; margin:2rem auto; max-width:900px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.05); border:1px solid #eee; display:flex; flex-wrap:wrap; gap:30px; }
+    .columna-galeria { flex:1; min-width:320px; display:flex; flex-direction:column; gap:10px; }
+    .contenedor-principal { width:100%; border:1px solid #e0e0e0; border-radius:6px; overflow:hidden; background:#f9f9f9; }
+    .imagen-activa { width:100%; aspect-ratio:4/3; object-fit:cover; }
+    .gallery { display:flex; gap:10px; }
+    .gallery img { width:calc(33.33% - 7px); aspect-ratio:4/3; object-fit:cover; border:1px solid #ccc; border-radius:4px; cursor:pointer; transition:0.2s; }
+    .gallery img:hover { border-color:#25D366; opacity:0.8; }
+    .columna-detalles { flex:1.2; min-width:320px; display:flex; flex-direction:column; }
+    .service h3 { font-size:24px; margin:0 0 15px; color:#111; }
+    .seccion-precio { background:#f4f9f5; padding:15px; border-radius:6px; margin-bottom:20px; border-left:4px solid #25D366; }
+    .texto-desde { font-size:12px; color:#666; text-transform:uppercase; font-weight:bold; margin:0; }
+    .precio-actual { font-size:28px; font-weight:bold; color:#222; display:block; margin:2px 0; }
+    .iva-texto { font-size:13px; color:#777; font-style:italic; margin:0; }
+    ul { margin:0 0 25px; padding-left:20px; color:#444; line-height:1.6; font-size:15px; }
+    ul li { margin-bottom:8px; }
+    .whatsapp-button a { display:inline-block; background:#25D366; color:white; padding:12px 24px; border-radius:6px; font-size:16px; text-decoration:none; font-weight:bold; box-shadow:0 4px 10px rgba(37,211,102,0.2); transition:0.2s; }
+    .whatsapp-button a:hover { background:#128C7E; transform:translateY(-1px); }
   </style>
 </head>
 <body>
@@ -194,84 +44,60 @@
     </nav>
   </header>
 
-  <!-- TÍTULO OPTIMIZADO PARA GOOGLE -->
   <h2>Plantas de Tratamiento de Aguas Residuales PTAR-MBR Disponibles</h2>
 
   <!-- Producto 1: 5M3/D -->
-  <div class="service">
-    
+  <div class="service" itemscope itemtype="https://schema.org/Product">
     <div class="columna-galeria">
       <div class="contenedor-principal">
-        <img src="producto-mbr-5-1.jpg" alt="Instalación de Planta de Tratamiento de Agua Residual PTAR-MBR de 5 metros cúbicos por día" class="imagen-activa" id="ptar5-main">
+        <img src="producto-mbr-5-1.jpg" alt="Planta PTAR-MBR 5m3/d" class="imagen-activa" id="ptar5-main">
       </div>
       <div class="gallery">
-        <img src="producto-mbr-5-1.jpg" alt="Planta de tratamiento de agua residual MBR 5m3/d vista principal" onclick="document.getElementById('ptar5-main').src=this.src">
-        <img src="producto-mbr-5-2.jpg" alt="Sistema de biorreactor de membrana MBR 5m3/d componentes internos" onclick="document.getElementById('ptar5-main').src=this.src">
-        <img src="producto-mbr-5-3.jpg" alt="Tanque de filtración ptar mbr 5m3/d vista lateral" onclick="document.getElementById('ptar5-main').src=this.src">
+        <img src="producto-mbr-5-1.jpg" alt="Vista principal" onclick="document.getElementById('ptar5-main').src=this.src">
+        <img src="producto-mbr-5-2.jpg" alt="Vista lateral" onclick="document.getElementById('ptar5-main').src=this.src">
+        <img src="producto-mbr-5-3.jpg" alt="Vista detalle" onclick="document.getElementById('ptar5-main').src=this.src">
       </div>
     </div>
 
     <div class="columna-detalles">
-      <h3>Planta de Tratamiento PTAR-MBR 5 M³/D</h3>
-      
-      <div class="seccion-precio">
+      <h3 itemprop="name">Planta de Tratamiento PTAR-MBR 5 M³/D</h3>
+      <div class="seccion-precio" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <p class="texto-desde">Desde</p>
-        <span class="precio-actual">$350,000.00 MXN</span>
+        <span class="precio-actual" itemprop="price" content="350000">$350,000.00 MXN</span>
+        <meta itemprop="priceCurrency" content="MXN" />
+        <meta itemprop="availability" content="https://schema.org/InStock" />
+        <link itemprop="url" href="https://wa.me/528184694059?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%205m3/día" />
         <p class="iva-texto">*Aplican ingeniería y requerimientos de instalación</p>
       </div>
-
       <ul>
-        <li><strong>Capacidad:</strong> 5 M³/D (Metros Cúbicos por Día).</li>
-        <li><strong>Tecnología:</strong> Biorreactor de Membrana (MBR) de alto rendimiento industrial.</li>
-        <li><strong>Calidad de Agua:</strong> Filtración avanzada diseñada óptimamente para reúso directo en riego o sanitarios.</li>
+        <li><strong>Capacidad:</strong> 5 M³/D.</li>
+        <li><strong>Tecnología:</strong> Biorreactor de Membrana (MBR).</li>
+        <li><strong>Calidad de Agua:</strong> Filtración avanzada para reúso.</li>
       </ul>
-
       <div class="whatsapp-button">
-        <a href="https://wa.me" target="_blank">
-          Cotizar por WhatsApp
-        </a>
+        <a href="https://wa.me/528184694059?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%205m3/día" target="_blank">💬 Cotizar por WhatsApp</a>
       </div>
     </div>
-
   </div>
 
   <!-- Producto 2: 30-90M3/D -->
-  <div class="service">
-    
+  <div class="service" itemscope itemtype="https://schema.org/Product">
     <div class="columna-galeria">
       <div class="contenedor-principal">
-        <img src="producto-mbr-90-1.jpg" alt="Biorreactor de membrana MBR industrial para tratamiento de aguas comerciales de 30 a 90 m3" class="imagen-activa" id="ptar90-main">
+        <img src="producto-mbr-90-1.jpg" alt="Planta PTAR-MBR 30-90m3/d" class="imagen-activa" id="ptar90-main">
       </div>
       <div class="gallery">
-        <img src="producto-mbr-90-1.jpg" alt="Planta comercial de tratamiento de agua residual ptar mbr 30-90 m3/d" onclick="document.getElementById('ptar90-main').src=this.src">
-        <img src="producto-mbr-90-2.jpg" alt="Módulos de membranas de ultrafiltración MBR comerciales industriales" onclick="document.getElementById('ptar90-main').src=this.src">
-        <img src="producto-mbr-90-3.jpg" alt="Tablero de control y automatización de planta MBR industrial" onclick="document.getElementById('ptar90-main').src=this.src">
+        <img src="producto-mbr-90-1.jpg" alt="Vista principal" onclick="document.getElementById('ptar90-main').src=this.src">
+        <img src="producto-mbr-90-2.jpg" alt="Vista lateral" onclick="document.getElementById('ptar90-main').src=this.src">
+        <img src="producto-mbr-90-3.jpg" alt="Vista detalle" onclick="document.getElementById('ptar90-main').src=this.src">
       </div>
     </div>
 
     <div class="columna-detalles">
-      <h3>Planta de Tratamiento PTAR-MBR 30–90 M³/D</h3>
-      
-      <div class="seccion-precio">
+      <h3 itemprop="name">Planta de Tratamiento PTAR-MBR 30–90 M³/D</h3>
+      <div class="seccion-precio" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <p class="texto-desde">Desde</p>
-        <span class="precio-actual">$1,500,000.00 MXN</span>
-        <p class="iva-texto">*Aplican ingeniería y requerimientos de instalación</p>
-      </div>
-
-      <ul>
-        <li><strong>Capacidad:</strong> Rango industrial/comercial de 30 a 90 M³/D.</li>
-        <li><strong>Tecnología:</strong> Biorreactor de Membrana (MBR) de escala institucional y residencial.</li>
-        <li><strong>Calidad de Agua:</strong> Filtración avanzada de máxima pureza que cumple normativas mexicanas de reúso.</li>
-      </ul>
-
-      <div class="whatsapp-button">
-        <a href="https://wa.me" target="_blank">
-          Cotizar por WhatsApp
-        </a>
-      </div>
-    </div>
-
-  </div>
-
-</body>
-</html>
+        <span class="precio-actual" itemprop="price" content="1500000">$1,500,000.00 MXN</span>
+        <meta itemprop="priceCurrency" content="MXN" />
+        <meta itemprop="availability" content="https://schema.org/InStock" />
+        <link itemprop="
