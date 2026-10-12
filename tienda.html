@@ -154,3 +154,56 @@
     <div class="modal-content">
       <button type="button" class="close-modal" onclick="cerrarModal()">&times;</button>
       <h3 id="modalTitle">Descargar Ficha Técnica</h3>
+      <p>Por favor, ingresa tus datos para iniciar la descarga de inmediato.</p>
+      
+      <form action="https://formspree.io" method="POST" onsubmit="procesarDescarga(event)">
+        <!-- Campo oculto para saber qué planta les interesa en tu correo -->
+        <input type="hidden" name="Producto Interesado" id="formProducto" value="">
+
+        <label for="nameInput">Nombre Completo:</label>
+        <input type="text" name="Nombre" id="nameInput" placeholder="Ej. Juan Pérez" required>
+
+        <label for="phoneInput">Número de Teléfono:</label>
+        <input type="tel" name="Telefono" id="phoneInput" placeholder="Ej. 8112345678" required>
+
+        <label for="emailInput">Correo Electrónico:</label>
+        <input type="email" name="Email" id="emailInput" placeholder="juan@empresa.com" required>
+
+        <button type="submit" class="btn-submit">Enviar y Descargar 📄</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    let archivoParaDescargar = "";
+
+    function abrirModal(modeloPlanta, nombreArchivo) {
+      document.getElementById('modalTitle').innerText = "Ficha Técnica MBR " + modeloPlanta;
+      document.getElementById('formProducto').value = "Modelo MBR " + modeloPlanta;
+      archivoParaDescargar = nombreArchivo;
+      document.getElementById('downloadModal').style.display = 'flex';
+    }
+
+    function cerrarModal() {
+      document.getElementById('downloadModal').style.display = 'none';
+      document.getElementById('nameInput').value = "";
+      document.getElementById('phoneInput').value = "";
+      document.getElementById('emailInput').value = "";
+    }
+
+    function procesarDescarga(event) {
+      // Deja que el formulario se envíe normalmente a Formspree,
+      // y dispara la descarga del PDF medio segundo después.
+      setTimeout(function() {
+        const link = document.createElement('a');
+        link.href = archivoParaDescargar;
+        link.download = archivoParaDescargar;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        cerrarModal();
+      }, 500);
+    }
+  </script>
+</body>
+</html>
