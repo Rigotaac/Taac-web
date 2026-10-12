@@ -192,24 +192,24 @@
       <h3 id="modalTitle">Descargar Ficha Técnica</h3>
       <p>Por favor, ingresa tus datos para iniciar la descarga de inmediato.</p>
       
-      <!-- URL CORREGIDA CON TU ID DE FORMSPREE -->
+      <!-- FORMULARIO CONFIGURADO CON TU ENDPOINT CORRECTO -->
       <form action="https://formspree.io/f/mldqlnwy" method="POST" onsubmit="procesarDescarga(event)">
-  <input type="hidden" name="Producto Interesado" id="formProducto" value="">
+        <!-- Campo oculto para saber qué planta les interesa en tu correo -->
+        <input type="hidden" name="Producto Interesado" id="formProducto" value="">
 
-  <label for="nameInput">Nombre Completo:</label>
-  <input type="text" name="Nombre" id="nameInput" placeholder="Ej. Juan Pérez" required>
+        <label for="nameInput">Nombre Completo:</label>
+        <input type="text" name="Nombre" id="nameInput" placeholder="Ej. Juan Pérez" required>
 
-  <label for="phoneInput">Número de Teléfono:</label>
-  <input type="tel" name="Telefono" id="phoneInput" placeholder="Ej. 8112345678" required>
+        <label for="phoneInput">Número de Teléfono:</label>
+        <input type="tel" name="Telefono" id="phoneInput" placeholder="Ej. 8112345678" required>
 
-  <label for="emailInput">Correo Electrónico:</label>
-  <input type="email" name="Email" id="emailInput" placeholder="juan@empresa.com" required>
+        <label for="emailInput">Correo Electrónico:</label>
+        <input type="email" name="Email" id="emailInput" placeholder="juan@empresa.com" required>
 
-  <button type="submit" class="btn-submit">Enviar y Descargar 📄</button>
-</form>
+        <button type="submit" class="btn-submit">Enviar y Descargar 📄</button>
+      </form>
     </div>
   </div>
-
   <script>
     let archivoParaDescargar = "";
 
