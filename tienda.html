@@ -35,12 +35,23 @@
     /* Contenedor de botones para alineación vertical limpia */
     .botones-accion { display:flex; flex-direction:column; gap:10px; }
     
-    .download-button a { display:block; text-decoration:none; }
     .download-button button { width:100%; background:#4A5568; color:white; padding:12px 24px; border:none; border-radius:6px; font-size:16px; font-weight:bold; cursor:pointer; box-shadow:0 4px 10px rgba(74,85,104,0.15); transition:0.2s; }
     .download-button button:hover { background:#2D3748; transform:translateY(-1px); }
     
     .whatsapp-button a { display:block; text-align:center; background:#25D366; color:white; padding:12px 24px; border-radius:6px; font-size:16px; text-decoration:none; font-weight:bold; box-shadow:0 4px 10px rgba(37,211,102,0.2); transition:0.2s; }
     .whatsapp-button a:hover { background:#128C7E; transform:translateY(-1px); }
+
+    /* ESTILOS DE LA VENTANA MODAL (FLOTANTE) */
+    .modal-overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:1000; justify-content:center; align-items:center; backdrop-filter: blur(3px); }
+    .modal-content { background:white; padding:30px; border-radius:10px; max-width:400px; width:90%; position:relative; box-shadow:0 10px 25px rgba(0,0,0,0.2); box-sizing:border-box; }
+    .modal-content h3 { margin-top:0; color:#003366; font-size:20px; margin-bottom:15px; padding-right:20px; }
+    .modal-content p { font-size:14px; color:#666; margin-bottom:20px; }
+    .modal-content label { display:block; font-size:13px; font-weight:bold; margin-bottom:5px; color:#444; }
+    .modal-content input { width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px; box-sizing:border-box; font-size:15px; }
+    .btn-submit { width:100%; background:#25D366; color:white; border:none; padding:12px; font-size:16px; font-weight:bold; border-radius:5px; cursor:pointer; box-shadow:0 4px 10px rgba(37,211,102,0.2); transition:0.2s; }
+    .btn-submit:hover { background:#128C7E; }
+    .close-modal { position:absolute; top:12px; right:15px; font-size:24px; cursor:pointer; color:#999; font-weight:bold; border:none; background:none; }
+    .close-modal:hover { color:#333; }
   </style>
 </head>
 <body>
@@ -86,9 +97,7 @@
       <div class="botones-accion">
         <!-- BOTÓN DE FICHA TÉCNICA (PRODUCTO 1) -->
         <div class="download-button">
-          <a href="FICHA TECNICA PTAR MBR TAAC-5.pdf" download="FICHA TECNICA PTAR MBR TAAC-5.pdf">
-            <button type="button">📄 Descargar Ficha Técnica TAAC-5</button>
-          </a>
+          <button type="button" onclick="abrirModal('TAAC-5', 'FICHA TECNICA PTAR MBR TAAC-5.pdf')">📄 Descargar Ficha Técnica TAAC-5</button>
         </div>
         <!-- BOTÓN DE WHATSAPP (PRODUCTO 1) -->
         <div class="whatsapp-button">
@@ -130,9 +139,7 @@
       <div class="botones-accion">
         <!-- BOTÓN DE FICHA TÉCNICA (PRODUCTO 2) -->
         <div class="download-button">
-          <a href="FICHA TECNICA PTAR MBR TAAC-90.pdf" download="FICHA TECNICA PTAR MBR TAAC-90.pdf">
-            <button type="button">📄 Descargar Ficha Técnica TAAC-90</button>
-          </a>
+          <button type="button" onclick="abrirModal('TAAC-90', 'FICHA TECNICA PTAR MBR TAAC-90.pdf')">📄 Descargar Ficha Técnica TAAC-90</button>
         </div>
         <!-- BOTÓN DE WHATSAPP (PRODUCTO 2) -->
         <div class="whatsapp-button">
@@ -141,5 +148,9 @@
       </div>
     </div>
   </div>
-</body>
-</html>
+
+  <!-- ESTRUCTURA DE LA VENTANA MODAL DE REGISTRO -->
+  <div class="modal-overlay" id="downloadModal">
+    <div class="modal-content">
+      <button type="button" class="close-modal" onclick="cerrarModal()">&times;</button>
+      <h3 id="modalTitle">Descargar Ficha Técnica</h3>
