@@ -69,7 +69,8 @@
   <div class="service" itemscope itemtype="https://schema.org/Product">
     <div class="columna-galeria">
       <div class="contenedor-principal">
-        <img src="producto-mbr-5-1.jpg" alt="Planta PTAR-MBR 5m3/d" class="imagen-activa" id="ptar5-main">
+        <!-- CORRECCIÓN 1: Se agrega itemprop="image" a la foto principal -->
+        <img itemprop="image" src="producto-mbr-5-1.jpg" alt="Planta PTAR-MBR 5m3/d" class="imagen-activa" id="ptar5-main">
       </div>
       <div class="gallery">
         <img src="producto-mbr-5-1.jpg" alt="Vista principal" onclick="document.getElementById('ptar5-main').src=this.src">
@@ -80,15 +81,32 @@
 
     <div class="columna-detalles">
       <h3 itemprop="name">Planta de Tratamiento PTAR-MBR 5 M³/D</h3>
+      
+      <!-- CORRECCIÓN 2: Se agregan las etiquetas invisibles obligatorias de SKU y Marca justo abajo del título -->
+      <meta itemprop="sku" content="TAAC-MBR-5" />
+      <div itemprop="brand" itemscope itemtype="https://schema.org">
+        <meta itemprop="name" content="TAAC" />
+      </div>
+
       <div class="seccion-precio" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <p class="texto-desde">Desde</p>
         <span class="precio-actual" itemprop="price" content="20000">$20,000.00 USD</span>
-        <meta itemprop="priceCurrency" content="MXN" />
+        
+        <!-- CORRECCIÓN 3: Se cambia la moneda de MXN a USD para que coincida con el precio -->
+        <meta itemprop="priceCurrency" content="USD" />
         <meta itemprop="availability" content="https://schema.org/InStock" />
-        <link itemprop="url" href="https://wa.me/528717870041?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%205m3/día" />
+        <link itemprop="url" href="https://wa.me" />
         <p class="iva-texto">*Aplican ingeniería y requerimientos de instalación</p>
+
+        <!-- CORRECCIÓN 4: Se agrega la política de devoluciones obligatoria para comerciantes antes de cerrar el bloque de precio -->
+        <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org">
+          <meta itemprop="applicableCountry" content="MX" />
+          <meta itemprop="returnPolicyCategory" content="https://schema.org" />
+        </div>
       </div>
-      <ul>
+
+      <!-- CORRECCIÓN 5: Se agrega itemprop="description" a las especificaciones técnicas -->
+      <ul itemprop="description">
         <li><strong>Capacidad:</strong> 5 M³/D.</li>
         <li><strong>Tecnología:</strong> Biorreactor de Membrana (MBR).</li>
         <li><strong>Calidad de Agua:</strong> Filtración avanzada de máxima pureza que cumple normativas mexicanas de reúso.</li>
@@ -101,7 +119,7 @@
         </div>
         <!-- BOTÓN DE WHATSAPP (PRODUCTO 1) -->
         <div class="whatsapp-button">
-          <a href="https://wa.me/528717870041?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%205m3/día" target="_blank">💬 Cotizar por WhatsApp</a>
+          <a href="https://wa.me" target="_blank">💬 Cotizar por WhatsApp</a>
         </div>
       </div>
     </div>
@@ -111,7 +129,8 @@
   <div class="service" itemscope itemtype="https://schema.org/Product">
     <div class="columna-galeria">
       <div class="contenedor-principal">
-        <img src="producto-mbr-90-1.jpg" alt="Planta PTAR-MBR 30-90m3/d" class="imagen-activa" id="ptar90-main">
+        <!-- CORRECCIÓN 1: Se agrega itemprop="image" a la foto principal -->
+        <img itemprop="image" src="producto-mbr-90-1.jpg" alt="Planta PTAR-MBR 30-90m3/d" class="imagen-activa" id="ptar90-main">
       </div>
       <div class="gallery">
         <img src="producto-mbr-90-1.jpg" alt="Vista principal" onclick="document.getElementById('ptar90-main').src=this.src">
@@ -122,17 +141,34 @@
 
     <div class="columna-detalles">
       <h3 itemprop="name">Planta de Tratamiento PTAR-MBR 30–90 M³/D</h3>
+      
+      <!-- CORRECCIÓN 2: Se agregan las etiquetas invisibles obligatorias de SKU y Marca justo abajo del título -->
+      <meta itemprop="sku" content="TAAC-MBR-90" />
+      <div itemprop="brand" itemscope itemtype="https://schema.org">
+        <meta itemprop="name" content="TAAC" />
+      </div>
+
       <div class="seccion-precio" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <p class="texto-desde">Desde</p>
         <span class="precio-actual" itemprop="price" content="85700">$85,700.00 USD</span>
-        <meta itemprop="priceCurrency" content="MXN" />
+        
+        <!-- CORRECCIÓN 3: Se cambia la moneda de MXN a USD para que coincida con el precio -->
+        <meta itemprop="priceCurrency" content="USD" />
         <meta itemprop="availability" content="https://schema.org/InStock" />
-        <link itemprop="url" href="https://wa.me/528717870041?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%2030-90m3/día" />
+        <link itemprop="url" href="https://wa.me" />
         <p class="iva-texto">*Aplican ingeniería y requerimientos de instalación</p>
+
+        <!-- CORRECCIÓN 4: Se agrega la política de devoluciones obligatoria para comerciantes antes de cerrar el bloque de precio -->
+        <div itemprop="hasMerchantReturnPolicy" itemscope itemtype="https://schema.org">
+          <meta itemprop="applicableCountry" content="MX" />
+          <meta itemprop="returnPolicyCategory" content="https://schema.org" />
+        </div>
       </div>
-      <ul>
+
+      <!-- CORRECCIÓN 5: Se agrega itemprop="description" a las especificaciones técnicas -->
+      <ul itemprop="description">
         <li><strong>Capacidad:</strong> Rango industrial/comercial de 30 a 90 M³/D.</li>
-        <li><strong>Tecnología:</strong> Biorreactor de Membrana (MBR) de escala institucional,residencial e industrial.</li>
+        <li><strong>Tecnología:</strong> Biorreactor de Membrana (MBR) de escala institucional, residencial e industrial.</li>
         <li><strong>Calidad de Agua:</strong> Filtración avanzada de máxima pureza que cumple normativas mexicanas de reúso.</li>
       </ul>
       
@@ -143,7 +179,7 @@
         </div>
         <!-- BOTÓN DE WHATSAPP (PRODUCTO 2) -->
         <div class="whatsapp-button">
-          <a href="https://wa.me/528717870041?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%2030-90m3/día" target="_blank">💬 Cotizar por WhatsApp</a>
+          <a href="https://wa.me" target="_blank">💬 Cotizar por WhatsApp</a>
         </div>
       </div>
     </div>
@@ -157,21 +193,20 @@
       <p>Por favor, ingresa tus datos para iniciar la descarga de inmediato.</p>
       
       <!-- URL CORREGIDA CON TU ID DE FORMSPREE -->
-      <form action="https://formspree.io/f/mldqlnwy" method="POST" onsubmit="procesarDescarga(event)">
-        <!-- Campo oculto para saber qué planta les interesa en tu correo -->
-        <input type="hidden" name="Producto Interesado" id="formProducto" value="">
+      <form action="https://formspree.io" method="POST" onsubmit="procesarDescarga(event)">
+  <input type="hidden" name="Producto Interesado" id="formProducto" value="">
 
-        <label for="nameInput">Nombre Completo:</label>
-        <input type="text" name="Nombre" id="nameInput" placeholder="Ej. Juan Pérez" required>
+  <label for="nameInput">Nombre Completo:</label>
+  <input type="text" name="Nombre" id="nameInput" placeholder="Ej. Juan Pérez" required>
 
-        <label for="phoneInput">Número de Teléfono:</label>
-        <input type="tel" name="Telefono" id="phoneInput" placeholder="Ej. 8112345678" required>
+  <label for="phoneInput">Número de Teléfono:</label>
+  <input type="tel" name="Telefono" id="phoneInput" placeholder="Ej. 8112345678" required>
 
-        <label for="emailInput">Correo Electrónico:</label>
-        <input type="email" name="Email" id="emailInput" placeholder="juan@empresa.com" required>
+  <label for="emailInput">Correo Electrónico:</label>
+  <input type="email" name="Email" id="emailInput" placeholder="juan@empresa.com" required>
 
-        <button type="submit" class="btn-submit">Enviar y Descargar 📄</button>
-      </form>
+  <button type="submit" class="btn-submit">Enviar y Descargar 📄</button>
+</form>
     </div>
   </div>
 
@@ -187,10 +222,10 @@
 
     function cerrarModal() {
       document.getElementById('downloadModal').style.display = 'none';
-      document.getElementById('nameInput').value = "";
-      document.getElementById('phoneInput').value = "";
-      document.getElementById('emailInput').value = "";
-    }
+  document.getElementById('nameInput').value = "";
+  document.getElementById('phoneInput').value = ""; // <- Agrega esta línea
+  document.getElementById('emailInput').value = "";
+}
 
     function procesarDescarga(event) {
       // Deja que el formulario se envíe normalmente a Formspree,
