@@ -29,9 +29,17 @@
     .texto-desde { font-size:12px; color:#666; text-transform:uppercase; font-weight:bold; margin:0; }
     .precio-actual { font-size:28px; font-weight:bold; color:#222; display:block; margin:2px 0; }
     .iva-texto { font-size:13px; color:#777; font-style:italic; margin:0; }
-    ul { margin:0 0 25px; padding-left:20px; color:#444; line-height:1.6; font-size:15px; }
+    ul { margin:0 0 20px; padding-left:20px; color:#444; line-height:1.6; font-size:15px; }
     ul li { margin-bottom:8px; }
-    .whatsapp-button a { display:inline-block; background:#25D366; color:white; padding:12px 24px; border-radius:6px; font-size:16px; text-decoration:none; font-weight:bold; box-shadow:0 4px 10px rgba(37,211,102,0.2); transition:0.2s; }
+    
+    /* Contenedor de botones para alineación vertical limpia */
+    .botones-accion { display:flex; flex-direction:column; gap:10px; }
+    
+    .download-button a { display:block; text-decoration:none; }
+    .download-button button { width:100%; background:#4A5568; color:white; padding:12px 24px; border:none; border-radius:6px; font-size:16px; font-weight:bold; cursor:pointer; box-shadow:0 4px 10px rgba(74,85,104,0.15); transition:0.2s; }
+    .download-button button:hover { background:#2D3748; transform:translateY(-1px); }
+    
+    .whatsapp-button a { display:block; text-align:center; background:#25D366; color:white; padding:12px 24px; border-radius:6px; font-size:16px; text-decoration:none; font-weight:bold; box-shadow:0 4px 10px rgba(37,211,102,0.2); transition:0.2s; }
     .whatsapp-button a:hover { background:#128C7E; transform:translateY(-1px); }
   </style>
 </head>
@@ -63,7 +71,7 @@
       <h3 itemprop="name">Planta de Tratamiento PTAR-MBR 5 M³/D</h3>
       <div class="seccion-precio" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <p class="texto-desde">Desde</p>
-        <span class="precio-actual" itemprop="price" content="350000">$350,000.00 MXN</span>
+        <span class="precio-actual" itemprop="price" content="20000">$20,000.00 USD</span>
         <meta itemprop="priceCurrency" content="MXN" />
         <meta itemprop="availability" content="https://schema.org/InStock" />
         <link itemprop="url" href="https://wa.me/528184694059?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%205m3/día" />
@@ -72,10 +80,20 @@
       <ul>
         <li><strong>Capacidad:</strong> 5 M³/D.</li>
         <li><strong>Tecnología:</strong> Biorreactor de Membrana (MBR).</li>
-        <li><strong>Calidad de Agua:</strong> Filtración avanzada para reúso.</li>
+        <li><strong>Calidad de Agua:</strong> Filtración avanzada de máxima pureza que cumple normativas mexicanas de reúso.</li>
       </ul>
-      <div class="whatsapp-button">
-        <a href="https://wa.me/528184694059?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%205m3/día" target="_blank">💬 Cotizar por WhatsApp</a>
+      
+      <div class="botones-accion">
+        <!-- BOTÓN DE FICHA TÉCNICA (PRODUCTO 1) -->
+        <div class="download-button">
+          <a href="FICHA TECNICA PTAR MBR TAAC-5.pdf" download="FICHA TECNICA PTAR MBR TAAC-5.pdf">
+            <button type="button">📄 Descargar Ficha Técnica TAAC-5</button>
+          </a>
+        </div>
+        <!-- BOTÓN DE WHATSAPP (PRODUCTO 1) -->
+        <div class="whatsapp-button">
+          <a href="https://wa.me/528184694059?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%205m3/día" target="_blank">💬 Cotizar por WhatsApp</a>
+        </div>
       </div>
     </div>
   </div>
@@ -97,19 +115,31 @@
       <h3 itemprop="name">Planta de Tratamiento PTAR-MBR 30–90 M³/D</h3>
       <div class="seccion-precio" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
         <p class="texto-desde">Desde</p>
-        <span class="precio-actual" itemprop="price" content="1500000">$1,500,000.00 MXN</span>
+        <span class="precio-actual" itemprop="price" content="85700">$85,700.00 USD</span>
         <meta itemprop="priceCurrency" content="MXN" />
         <meta itemprop="availability" content="https://schema.org/InStock" />
-        <link itemprop="url" href="https://wa.me/528184694059?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%2030-90m3/día" />
+        <link itemprop="url" href="https://wa.me/528717870041?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%2030-90m3/día" />
         <p class="iva-texto">*Aplican ingeniería y requerimientos de instalación</p>
       </div>
       <ul>
         <li><strong>Capacidad:</strong> Rango industrial/comercial de 30 a 90 M³/D.</li>
-        <li><strong>Tecnología:</strong> Biorreactor de Membrana (MBR) de escala institucional y residencial.</li>
+        <li><strong>Tecnología:</strong> Biorreactor de Membrana (MBR) de escala institucional,residencial e industrial.</li>
         <li><strong>Calidad de Agua:</strong> Filtración avanzada de máxima pureza que cumple normativas mexicanas de reúso.</li>
       </ul>
-      <div class="whatsapp-button">
-        <a href="https://wa.me/528184694059?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%2030-90m3/día" target="_blank">💬 Cotizar por WhatsApp</a>
+      
+      <div class="botones-accion">
+        <!-- BOTÓN DE FICHA TÉCNICA (PRODUCTO 2) -->
+        <div class="download-button">
+          <a href="FICHA TECNICA PTAR MBR TAAC-90.pdf" download="FICHA TECNICA PTAR MBR TAAC-90.pdf">
+            <button type="button">📄 Descargar Ficha Técnica TAAC-90</button>
+          </a>
+        </div>
+        <!-- BOTÓN DE WHATSAPP (PRODUCTO 2) -->
+        <div class="whatsapp-button">
+          <a href="https://wa.me/528717870041?text=Hola%20TAAC,%20quiero%20cotizar%20la%20Planta%20MBR%2030-90m3/día" target="_blank">💬 Cotizar por WhatsApp</a>
+        </div>
       </div>
     </div>
   </div>
+</body>
+</html>
