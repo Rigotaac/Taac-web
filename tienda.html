@@ -13,7 +13,7 @@
     header h1 { margin:0; font-size:1.5rem; }
     nav a { color:white; margin:0 1rem; text-decoration:none; font-weight:bold; }
     nav a:hover { text-decoration:underline; }
-    h2 { text-align:center; color:#003366; margin-top:2rem; font-size:1.8rem; }
+    .titulo-tienda { text-align:center; color:#003366; margin-top:2rem; font-size:1.8rem; }
 
     .service { background:#fff; border-radius:8px; padding:2rem; margin:2rem auto; max-width:900px;
       box-shadow:0 4px 12px rgba(0,0,0,0.05); border:1px solid #eee; display:flex; flex-wrap:wrap; gap:30px; }
@@ -52,21 +52,41 @@
     .btn-submit:hover { background:#128C7E; }
     .close-modal { position:absolute; top:12px; right:15px; font-size:24px; cursor:pointer; color:#999; font-weight:bold; border:none; background:none; }
     .close-modal:hover { color:#333; }
+      @media (max-width: 700px) {
+      header { flex-wrap: wrap; gap: 12px; padding: 1rem; }
+      nav a { margin: 0 .5rem; }
+      .service { margin: 1rem; padding: 1rem; gap: 18px; }
+      .columna-galeria, .columna-detalles { min-width: 0; flex: 1 1 100%; }
+      .titulo-tienda { font-size: 1.5rem; padding: 0 1rem; }
+    }
   </style>
+  <link rel="canonical" href="https://www.taacmx.com/tienda.html">
+  <meta property="og:title" content="Plantas PTAR-MBR | TAAC">
+  <meta property="og:description" content="Consulta plantas de tratamiento MBR de 5 y 30–90 m³/d y solicita una cotización personalizada.">
+  <meta property="og:url" content="https://www.taacmx.com/tienda.html">
+  <meta property="og:image" content="https://www.taacmx.com/producto-mbr-5-1.jpg">
+  <meta property="og:type" content="website">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLVCKFBN5D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YLVCKFBN5D');
+  </script>
 </head>
 <body>
   <header>
-    <h1>Tienda TAAC</h1>
+    <span style="font-size:1.5rem;font-weight:bold">Tienda TAAC</span>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="tienda.html">Tienda</a>
     </nav>
   </header>
 
-  <h2>Plantas de Tratamiento de Aguas Residuales PTAR-MBR Disponibles</h2>
+  <h1 class="titulo-tienda">Plantas de tratamiento de aguas residuales PTAR-MBR</h1>
 
   <!-- Producto 1: 5M3/D -->
-  <div class="service" itemscope itemtype="https://schema.org/Product">
+  <div class="service" id="ptar-5" itemscope itemtype="https://schema.org/Product">
     <div class="columna-galeria">
       <div class="contenedor-principal">
         <!-- CORRECCIÓN 1: Se agrega itemprop="image" a la foto principal -->
@@ -94,9 +114,9 @@
         
         <!-- CORRECCIÓN 3: Se cambia la moneda de MXN a USD para que coincida con el precio -->
         <meta itemprop="priceCurrency" content="USD" />
-        <meta itemprop="availability" content="https://schema.org/InStock" />
-        <link itemprop="url" href="https://wa.me" />
-        <p class="iva-texto">*Aplican ingeniería y requerimientos de instalación</p>
+        
+        <link itemprop="url" href="https://www.taacmx.com/tienda.html#ptar-5" />
+        <p class="iva-texto">*Precio de referencia en USD. Cotización definitiva y condiciones comerciales según cada proyecto.</p>
 
       </div>
 
@@ -114,14 +134,14 @@
         </div>
         <!-- BOTÓN DE WHATSAPP (PRODUCTO 1) -->
         <div class="whatsapp-button">
-          <a href="https://wa.me" target="_blank">💬 Cotizar por WhatsApp</a>
+          <a href="https://wa.me/528717870041?text=Hola%20TAAC%2C%20quisiera%20cotizar%20una%20planta%20PTAR-MBR%20de%205%20m%C2%B3/d." target="_blank" rel="noopener noreferrer">💬 Cotizar por WhatsApp</a>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Producto 2: 30-90M3/D -->
-  <div class="service" itemscope itemtype="https://schema.org/Product">
+  <div class="service" id="ptar-90" itemscope itemtype="https://schema.org/Product">
     <div class="columna-galeria">
       <div class="contenedor-principal">
         <!-- CORRECCIÓN 1: Se agrega itemprop="image" a la foto principal -->
@@ -149,9 +169,9 @@
         
         <!-- CORRECCIÓN 3: Se cambia la moneda de MXN a USD para que coincida con el precio -->
         <meta itemprop="priceCurrency" content="USD" />
-        <meta itemprop="availability" content="https://schema.org/InStock" />
-        <link itemprop="url" href="https://wa.me" />
-        <p class="iva-texto">*Aplican ingeniería y requerimientos de instalación</p>
+        
+        <link itemprop="url" href="https://www.taacmx.com/tienda.html#ptar-90" />
+        <p class="iva-texto">*Precio de referencia en USD. Cotización definitiva y condiciones comerciales según cada proyecto.</p>
 
       </div>
 
@@ -169,7 +189,7 @@
         </div>
         <!-- BOTÓN DE WHATSAPP (PRODUCTO 2) -->
         <div class="whatsapp-button">
-          <a href="https://wa.me" target="_blank">💬 Cotizar por WhatsApp</a>
+          <a href="https://wa.me/528717870041?text=Hola%20TAAC%2C%20quisiera%20cotizar%20una%20planta%20PTAR-MBR%20de%2030%E2%80%9390%20m%C2%B3/d." target="_blank" rel="noopener noreferrer">💬 Cotizar por WhatsApp</a>
         </div>
       </div>
     </div>

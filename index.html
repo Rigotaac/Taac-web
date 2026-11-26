@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TAAC | Tratamiento de Agua y Construcción</title>
+  <title>TAAC | Tratamiento de Agua Industrial, PTAR y Construcción</title>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YLVCKFBN5D"></script>
@@ -18,7 +18,7 @@
   <link rel="icon" href="TAAC-preview.png" type="image/png">
 
   <!-- SEO básico -->
-  <meta name="description" content="TAAC ofrece soluciones integrales en agua, arquitectura y construcción en México. Expertos en tratamiento de agua, diseño arquitectónico, obra civil y plantas de tratamiento (PTAR) con visión sostenible.">
+  <meta name="description" content="Soluciones de tratamiento de agua industrial en México: plantas PTAR, tecnología MBR, ultrafiltración, mantenimiento, arquitectura y construcción. Solicita una cotización.">
   <meta name="keywords" content="TAAC, agua, tratamiento de agua, PTAR, plantas de tratamiento, arquitectura, construcción, obra civil, diseño arquitectónico, México">
   <meta name="author" content="TAAC">
 
@@ -26,7 +26,7 @@
   <meta property="og:title" content="TAAC | Soluciones en Agua y Construcción">
   <meta property="og:description" content="Soluciones inteligentes en agua, arquitectura y construcción. Ingeniería de alto nivel con enfoque en PTAR y sostenibilidad.">
   <meta property="og:image" content="https://www.taacmx.com/TAAC-preview.png">
-  <meta property="og:url" content="https://www.taacmx.com">
+  <meta property="og:url" content="https://www.taacmx.com/">
   <meta property="og:type" content="website">
 
   <!-- Twitter -->
@@ -178,7 +178,19 @@
       text-align: center;
       padding: 1rem;
     }
+      header { z-index: 10; }
+    section { scroll-margin-top: 120px; }
+    @media (max-width: 700px) {
+      header { flex-wrap: wrap; padding: .7rem 1rem; position: static; }
+      nav { display: flex; flex-wrap: wrap; gap: .7rem; }
+      nav a { margin: 0; }
+      .hero h1 { font-size: 1.8rem; transform: none; }
+      .services { flex-direction: column; }
+      section { padding: 2rem 1rem; }
+    }
   </style>
+  <link rel="canonical" href="https://www.taacmx.com/">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "TAAC", "url": "https://www.taacmx.com/", "logo": "https://www.taacmx.com/logo-taac.png"}</script>
 </head>
 <body>
   <header>
@@ -196,7 +208,7 @@
   </header>
 
   <div class="hero">
-    <h1>Soluciones integrales en Agua y Construcción</h1>
+    <h1>Soluciones de tratamiento de agua, ingeniería y construcción</h1>
   </div>
 
   <section id="nosotros">
@@ -209,17 +221,17 @@ Nos especializamos en materializar proyectos complejos a través de un diseño f
     <h2>Nuestros Servicios</h2>
     <div class="services">
       <div class="service">
-        <img src="agua.jpg" alt="Servicio de Agua">
-        <h3>Agua</h3>
-        <p>Tratamiento, automatización, mantenimientos y diseño de plantas potabilizadoras e industriales. Especialistas en suministro de membranas MBR (Biorreactores de Membrana) y módulos de ultrafiltración para tratamiento de aguas residuales en México.</p>
+        <img loading="lazy" decoding="async" src="agua.jpg" alt="Servicio de Agua">
+        <h3>Tratamiento de agua industrial</h3>
+        <p>Tratamiento, automatización, mantenimientos y diseño de plantas potabilizadoras e industriales. Especialistas en suministro de membranas MBR (Biorreactores de Membrana) y módulos de ultrafiltración para tratamiento de aguas residuales en México. <a href="tienda.html">Consulta nuestras plantas PTAR-MBR y solicita una cotización.</a></p>
       </div>
       <div class="service">
-        <img src="arquitectura.jpg" alt="Servicio de Arquitectura">
+        <img loading="lazy" decoding="async" src="arquitectura.jpg" alt="Servicio de Arquitectura">
         <h3>Arquitectura</h3>
         <p>Diseño arquitectónico, planos ejecutivos y visualización de proyectos.</p>
       </div>
       <div class="service">
-        <img src="construccion.jpg" alt="Servicio de Construcción">
+        <img loading="lazy" decoding="async" src="construccion.jpg" alt="Servicio de Construcción">
         <h3>Construcción</h3>
         <p>Obra civil, supervisión técnica y soluciones estructurales.</p>
       </div>
@@ -229,10 +241,10 @@ Nos especializamos en materializar proyectos complejos a través de un diseño f
   <section id="proyectos">
     <h2>Algunos de nuestros Proyectos</h2>
     <div class="projects">
-      <div class="project"><img src="proyecto1.jpg" alt="Proyecto 1" width="100%" /></div>
-      <div class="project"><img src="proyecto2.jpg" alt="Proyecto 2" width="100%" /></div>
-      <div class="project"><img src="proyecto3.jpg" alt="Proyecto 3" width="100%" /></div>
-      <div class="project"><img src="proyecto4.jpg" alt="Proyecto 4" width="100%" /></div>
+      <div class="project"><img loading="lazy" decoding="async" src="proyecto1.jpg" alt="Proyecto 1" width="100%" /></div>
+      <div class="project"><img loading="lazy" decoding="async" src="proyecto2.jpg" alt="Proyecto 2" width="100%" /></div>
+      <div class="project"><img loading="lazy" decoding="async" src="proyecto3.jpg" alt="Proyecto 3" width="100%" /></div>
+      <div class="project"><img loading="lazy" decoding="async" src="proyecto4.jpg" alt="Proyecto 4" width="100%" /></div>
     </div>
   </section>
 
@@ -254,7 +266,7 @@ Nos especializamos en materializar proyectos complejos a través de un diseño f
     </form>
 
     <div class="whatsapp-button">
-      <a href="https://wa.me/528717870041?text=Hola%20TAAC,%20quiero%20más%20información%20sobre%20sus%20servicios" target="_blank">
+      <a href="https://wa.me/528717870041?text=Hola%20TAAC,%20quiero%20más%20información%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">
         💬 Escríbenos por WhatsApp
       </a>
     </div>
